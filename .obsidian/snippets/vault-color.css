@@ -1,0 +1,11 @@
+.workspace-ribbon,
+.workspace-ribbon.mod-left,
+.side-dock-ribbon {
+  background: #06c0ef;
+}
+
+.titlebar,
+.view-header,
+.workspace-tab-header-container {
+  background: #06c0ef;
+}
