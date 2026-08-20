@@ -1,51 +1,25 @@
-# Kevin Inscoe's playbook
+# playbook
 
-Life as code.
-
-## Status
-
-Experimental — active rebuild.
-
-## What is this?
-
-This repository is my personal development and engineering playbook: a digital garden of how I work, think, and create, shared as a practical example for others.
-
-Most playbooks are:
-
-- written for organizations
-- heavy on process and policy
-- designed for teams
-
-This playbook is different. It is written for an individual engineer rather than an organization. It documents the principles, workflows, tools, and habits that shape how I build systems, solve problems, and manage knowledge.
-
-Why make this collection?
-
-- It serves as my manual.
-- It helps me organize my thoughts.
-- I use the repository to manage projects, organize tasks, set goals, and track progress.
-- Version control makes it easy to look back on how the playbook has evolved.
-
-Why make it public?
-
-- It helps me showcase my work publicly, allowing potential employers or collaborators to see my knowledge, skills, and contributions.
-- It creates opportunities for learning and collaboration.
-- But mostly it forces me to think and continually re-think about my process professionally and personally.
-
-I am after all a [shed builder](https://dylanbutler.dev/blog/protect-your-shed/) and I also work in a shed.
-
-If it helps you refine your own approach, then it has served its purpose.
-
-## Repository Layout
+The Obsidian vault for this repository is **[`playbook/`](playbook/README.md)** — a named
+child of this directory, not this directory itself.
 
 ```
-playbook/
-├── images/                                    # supporting images
-├── integrated-development-environments-ides/  # IDE tooling and configuration notes
-├── .gitignore
-├── LICENSE
-└── README.md
+playbook/              <- you are here: the Git repository root
+└── playbook/          <- the vault; open THIS in Obsidian
 ```
 
-## License
+Open `~/Projects/public/playbook/playbook` with **Open folder as vault**. The full README,
+the notes, and `.obsidian/` all live in there.
 
-[Creative Commons Attribution 4.0 International](LICENSE)
+Everything at this level is repository scaffolding the vault never sees: this file,
+`LICENSE`, `.gitignore`, and any transient `ai-wt/` project worktree.
+
+## Why the split
+
+The vault is a named child of the repository root, never the root itself. A live Obsidian
+rewrites what Git checks out — the paste-image-rename plugin has been observed renaming a
+checked-out file 353 ms into a `git worktree add` — and a branch cannot be reviewed in
+Obsidian when the primary checkout *is* the vault.
+
+The directory is named `playbook` rather than `vault` because Obsidian takes a vault's name
+from its folder basename and offers no rename.
